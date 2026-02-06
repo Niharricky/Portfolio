@@ -360,98 +360,28 @@
 
         /* Resume Page */
         .resume-container {
-            max-width: 1000px;
+            max-width: 800px;
             margin: 0 auto;
-        }
-
-        .resume-section {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .resume-section h3 {
-            color: var(--primary-light);
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--primary);
-            padding-bottom: 0.5rem;
-        }
-
-        .resume-header {
             text-align: center;
-            margin-bottom: 3rem;
         }
 
-        .resume-header h2 {
-            font-size: 2.5rem;
+        .resume-placeholder {
+            background: var(--bg-card);
+            border: 2px dashed var(--border);
+            border-radius: 12px;
+            padding: 4rem 2rem;
+            margin-top: 2rem;
+        }
+
+        .resume-placeholder h3 {
+            color: var(--primary-light);
+            font-size: 1.5rem;
             margin-bottom: 1rem;
         }
 
-        .resume-contact {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
+        .resume-placeholder p {
             color: var(--text-secondary);
-        }
-
-        .resume-contact a {
-            color: var(--primary-light);
-            text-decoration: none;
-        }
-
-        .resume-item {
             margin-bottom: 2rem;
-        }
-
-        .resume-item h4 {
-            color: var(--primary-light);
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .resume-meta {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
-            font-style: italic;
-        }
-
-        .resume-item ul {
-            margin-top: 1rem;
-            margin-left: 1.5rem;
-        }
-
-        .resume-item li {
-            color: var(--text-secondary);
-            margin-bottom: 0.7rem;
-            line-height: 1.6;
-        }
-
-        .cert-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .cert-item {
-            background: rgba(139, 92, 246, 0.05);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 3px solid var(--primary);
-        }
-
-        .cert-item h4 {
-            color: var(--primary-light);
-            margin-bottom: 0.5rem;
-        }
-
-        .cert-item p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
         }
 
         /* Contact Page */
@@ -561,11 +491,6 @@
             .projects-grid {
                 grid-template-columns: 1fr;
             }
-
-            .resume-contact {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
         }
     </style>
 </head>
@@ -590,9 +515,8 @@
                 <h1>Nihar Toor</h1>
                 <p class="role">Data Analyst</p>
                 <p class="description">
-                    Data Analyst with hands-on experience analyzing 1M+ records using SQL, Python, and Power BI 
-                    to deliver actionable business insights. Specialized in EDA, dashboard development, and 
-                    customer segmentation to drive data-driven decision-making.
+                    Transforming raw data into actionable insights through comprehensive analytics. 
+                    Specialized in Python, SQL, and Power BI to drive data-driven decision making.
                 </p>
                 <div class="cta-buttons">
                     <a class="btn btn-primary" onclick="showPage('projects')">View Projects</a>
@@ -612,39 +536,35 @@
         <div class="about-content">
             <h2 class="section-title">About Me</h2>
             <p class="about-text">
-                I'm a passionate Data Analyst with expertise in SQL, Python, Power BI, and Excel. I specialize in 
-                transforming complex datasets into actionable insights through comprehensive analytics. My experience 
-                spans HR analytics, customer behavior analysis, financial dashboards, and e-commerce insights. 
-                I focus on delivering data-driven solutions that support revenue growth and strategic decision-making.
+                I'm a passionate Data Analyst from India with expertise in end-to-end data analytics workflows. 
+                From data cleaning and exploration to building interactive dashboards, I focus on extracting 
+                meaningful insights that drive business decisions. My approach combines technical skills with 
+                analytical thinking to solve real-world problems.
             </p>
 
             <h3 style="text-align: center; margin-bottom: 2rem; color: var(--primary-light);">Skills & Tools</h3>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>Programming & Querying</h3>
+                    <h3>Data Analysis</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">SQL</span>
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Pandas</span>
                         <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">DAX</span>
                     </div>
                 </div>
                 <div class="skill-card">
-                    <h3>Data Visualization</h3>
+                    <h3>Database</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Visualization</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Matplotlib</span>
                         <span class="skill-tag">Excel</span>
-                        <span class="skill-tag">Tableau</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <h3>Analytics</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">EDA</span>
-                        <span class="skill-tag">Data Cleaning</span>
-                        <span class="skill-tag">RFM Segmentation</span>
-                        <span class="skill-tag">Statistical Analysis</span>
                     </div>
                 </div>
             </div>
@@ -652,68 +572,30 @@
     </div>
 
     <!-- Projects Page -->
+    
     <div class="page" id="projects">
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <span class="project-number">01</span>
-                <h3>HR Attrition Dashboard</h3>
-                <p>Comprehensive HR analytics dashboard analyzing 1,470 employee records to identify attrition patterns and develop retention strategies.</p>
-                <ul class="project-highlights">
-                    <li>Identified 16.12% attrition rate with 48% in low-income bracket</li>
-                    <li>Created 10+ interactive Power BI visualizations</li>
-                    <li>SQL data validation and integrity checks</li>
-                    <li>Strategic recommendations for retention programs</li>
-                </ul>
-                <div class="tech-stack">
-                    <span class="tech-tag">Power BI</span>
-                    <span class="tech-tag">SQL</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Excel</span>
-                </div>
-                <a href="https://github.com/Niharricky/HR-Attrition-Dashboard" target="_blank" class="project-link">View Project →</a>
-            </div>
-
-            <div class="project-card">
-                <span class="project-number">02</span>
-                <h3>Coffee Shop Sales Analysis</h3>
-                <p>Sales analytics project uncovering revenue patterns, customer behavior trends, and operational optimization opportunities.</p>
-                <ul class="project-highlights">
-                    <li>Interactive dashboards tracking revenue and transactions</li>
-                    <li>Time-series analysis identifying peak hours</li>
-                    <li>Product performance and category analysis</li>
-                    <li>Location-based performance metrics</li>
-                </ul>
-                <div class="tech-stack">
-                    <span class="tech-tag">Power BI</span>
-                    <span class="tech-tag">SQL</span>
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">Excel</span>
-                </div>
-                <a href="https://github.com/Niharricky/Coffee-Shop-Sales" target="_blank" class="project-link">View Project →</a>
-            </div>
-
-            <div class="project-card">
-                <span class="project-number">03</span>
                 <h3>Customer Behavior Analysis</h3>
-                <p>End-to-end analytics project analyzing 3,900+ customer records to understand purchasing patterns and subscription drivers.</p>
+                <p>End-to-end analytics project analyzing customer shopping patterns to understand purchasing behavior and subscription drivers.</p>
                 <ul class="project-highlights">
-                    <li>Analyzed purchasing trends by age and subscription</li>
-                    <li>Feature engineering for customer segmentation</li>
-                    <li>8+ visualizations highlighting high-value customers</li>
-                    <li>Identified 45% higher purchase frequency in returning customers</li>
+                    <li>Complete EDA and data cleaning in Python</li>
+                    <li>SQL queries for customer segmentation</li>
+                    <li>Interactive Power BI dashboard</li>
+                    <li>Subscription pattern analysis</li>
                 </ul>
                 <div class="tech-stack">
                     <span class="tech-tag">Python</span>
                     <span class="tech-tag">SQL</span>
                     <span class="tech-tag">Power BI</span>
-                    <span class="tech-tag">Excel</span>
                 </div>
                 <a href="https://github.com/Niharricky/Customer_behavior_analysis" target="_blank" class="project-link">View Project →</a>
             </div>
 
             <div class="project-card">
-                <span class="project-number">04</span>
+                <span class="project-number">02</span>
                 <h3>Ecommerce Business Insights</h3>
                 <p>Large-scale analytics processing 1M+ transactions to uncover revenue trends and customer segmentation insights.</p>
                 <ul class="project-highlights">
@@ -731,147 +613,53 @@
             </div>
 
             <div class="project-card">
-                <span class="project-number">05</span>
+                <span class="project-number">03</span>
                 <h3>Credit Card Financial Dashboard</h3>
-                <p>Real-time financial dashboard tracking $57M in credit card revenue with 28.8% week-over-week growth.</p>
+                <p>Real-time financial dashboard tracking credit card metrics, revenue streams, and customer demographics.</p>
                 <ul class="project-highlights">
-                    <li>MySQL database with 10,109 transaction records</li>
-                    <li>12+ DAX calculations for advanced metrics</li>
-                    <li>Revenue concentration analysis across states</li>
-                    <li>Activation and delinquency rate monitoring</li>
+                    <li>SQL pipeline for weekly updates</li>
+                    <li>DAX measures for calculations</li>
+                    <li>KPI tracking system</li>
+                    <li>Revenue and demographic analysis</li>
                 </ul>
                 <div class="tech-stack">
+                    <span class="tech-tag">SQL</span>
                     <span class="tech-tag">Power BI</span>
-                    <span class="tech-tag">MySQL</span>
                     <span class="tech-tag">DAX</span>
-                    <span class="tech-tag">Excel</span>
                 </div>
                 <a href="https://github.com/Niharricky/Credit_Card_Financial_Dashboard" target="_blank" class="project-link">View Project →</a>
             </div>
         </div>
     </div>
-
+<div class="page" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <span class="project-number">04</span>
+                <h3>HR Attrition Dashboard</h3>
+                <p>Comprehensive HR analytics dashboard analyzing 1,470 employee records to identify attrition patterns and develop retention strategies.</p>
+                <ul class="project-highlights">
+                    <li>Identified 16.12% attrition rate with 48% in low-income bracket</li>
+                    <li>Created 10+ interactive Power BI visualizations</li>
+                    <li>SQL data validation and integrity checks</li>
+                    <li>Strategic recommendations for retention programs</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">SQL</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Excel</span>
+                </div>
+                <a href="https://github.com/Niharricky/HR-Attrition-Dashboard" target="_blank" class="project-link">View Project →</a>
+            </div>
     <!-- Resume Page -->
     <div class="page" id="resume">
         <div class="resume-container">
-            <div class="resume-header">
-                <h2>Nihar Toor</h2>
-                <div class="resume-contact">
-                    <span>📞 +91-9896712626</span>
-                    <span>📧 <a href="/cdn-cgi/l/email-protection#244a4d4c4556504b4b56141c644349454d480a474b49"><span class="__cf_email__" data-cfemail="513f38393023253e3e23616911363c30383d7f323e3c">[email&#160;protected]</span></a></span>
-                    <span>💼 <a href="https://github.com/Niharricky" target="_blank">github.com/Niharricky</a></span>
-                </div>
-            </div>
-
-            <div class="resume-section">
-                <h3>Professional Summary</h3>
-                <p style="color: var(--text-secondary); line-height: 1.8;">
-                    Data Analyst with hands-on experience analyzing 1M+ records using SQL, Python, Microsoft Excel, and Power BI to 
-                    deliver actionable business insights. Strong in exploratory data analysis (EDA), KPI reporting, dashboard development, 
-                    and customer segmentation. Proven ability to translate complex data into clear insights that support revenue growth and 
-                    data-driven decision-making.
-                </p>
-            </div>
-
-            <div class="resume-section">
-                <h3>Professional Experience</h3>
-                <div class="resume-item">
-                    <h4>Data Analyst – HR Attrition Analytics</h4>
-                    <p class="resume-meta">December 2025 – January 2026 | Remote</p>
-                    <p class="resume-meta" style="margin-top: 0.3rem;">Power BI, SQL, Python, Excel</p>
-                    <ul>
-                        <li>Analyzed 1,470 employee records using Power BI, SQL, and Python to identify key drivers of 16.12% attrition rate, revealing 48% of departures occurred in low-income bracket and 42% within first 2 years of employment.</li>
-                        <li>Performed data cleaning and validation using SQL queries to ensure data integrity, checking for null values, duplicates, and establishing primary key constraints on employee records.</li>
-                        <li>Created interactive Power BI dashboard with 10+ visualizations including attrition by salary band, department, job role, age group, and tenure, enabling HR stakeholders to identify high-risk segments.</li>
-                        <li>Developed strategic recommendations including compensation review for low-income roles, enhanced 90-day onboarding program, and targeted retention efforts for Sales (38.55% attrition) and HR (35.59% attrition) departments.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="resume-section">
-                <h3>Projects</h3>
-                
-                <div class="resume-item">
-                    <h4>HR Attrition Dashboard</h4>
-                    <p class="resume-meta">Power BI, SQL, Python, Excel | December 2025 – January 2026</p>
-                    <ul>
-                        <li>Designed comprehensive HR analytics dashboard analyzing 1,470 employee records to identify attrition patterns.</li>
-                        <li>Implemented advanced SQL data validation including null checks, duplicate detection, and primary key constraints.</li>
-                        <li>Created 10+ interactive Power BI visualizations displaying attrition metrics across salary bands, departments, and tenure.</li>
-                        <li>Delivered actionable recommendations for enhanced onboarding and targeted retention programs.</li>
-                    </ul>
-                </div>
-
-                <div class="resume-item">
-                    <h4>Coffee Shop Sales Analysis</h4>
-                    <p class="resume-meta">Power BI, SQL, Python, Excel | January 2026</p>
-                    <ul>
-                        <li>Analyzed comprehensive coffee shop sales data to uncover revenue patterns and customer behavior trends.</li>
-                        <li>Built interactive Power BI dashboards tracking revenue, transactions, and average order values.</li>
-                        <li>Performed time-series analysis identifying peak sales hours and seasonal patterns for staffing optimization.</li>
-                        <li>Developed location-based performance metrics comparing store productivity.</li>
-                    </ul>
-                </div>
-
-                <div class="resume-item">
-                    <h4>Customer Behavior Analysis</h4>
-                    <p class="resume-meta">Python, SQL, Power BI, Excel | November 2025</p>
-                    <ul>
-                        <li>Analyzed 3,900+ customer records using SQL and Python to uncover purchasing trends by age, subscription type, and product category.</li>
-                        <li>Performed feature engineering to create customer segments and purchase-frequency buckets.</li>
-                        <li>Created 8+ visualizations using Power BI highlighting high-value customers.</li>
-                        <li>Identified 45% higher purchase frequency among returning customers, recommending targeted retention strategies.</li>
-                    </ul>
-                </div>
-
-                <div class="resume-item">
-                    <h4>Credit Card Financial Dashboard</h4>
-                    <p class="resume-meta">Power BI (DAX), MySQL, Excel | December 2025</p>
-                    <ul>
-                        <li>Built real-time weekly dashboard tracking $57M in credit card revenue with 28.8% week-over-week growth.</li>
-                        <li>Designed MySQL database schema and imported 10,109 transaction and customer records.</li>
-                        <li>Created 12+ DAX calculations including week-over-week metrics and customer segmentation.</li>
-                        <li>Developed 2 interactive dashboards revealing 68% revenue concentration in top 3 states.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="resume-section">
-                <h3>Certifications</h3>
-                <div class="cert-grid">
-                    <div class="cert-item">
-                        <h4>McKinsey Forward Program</h4>
-                        <p><strong>McKinsey & Company</strong> (2025)</p>
-                        <p>Strategic problem-solving and business analytics</p>
-                    </div>
-                    <div class="cert-item">
-                        <h4>Data Analytics Job Simulation</h4>
-                        <p><strong>Deloitte</strong> (2025)</p>
-                        <p>Business analysis and data-driven consulting</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="resume-section">
-                <h3>Education</h3>
-                <div class="resume-item">
-                    <h4>Bachelor of Technology in Information Technology</h4>
-                    <p class="resume-meta">Panipat Institute of Engineering and Technology | Haryana, India</p>
-                    <p class="resume-meta">Graduated: 2025</p>
-                </div>
-            </div>
-
-            <div class="resume-section">
-                <h3>Technical Skills</h3>
-                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
-                    <strong style="color: var(--primary-light);">Programming & Querying:</strong> SQL, Python (Pandas, NumPy), DAX
-                </p>
-                <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
-                    <strong style="color: var(--primary-light);">Data Visualization Tools:</strong> Power BI, Microsoft Excel (Advanced), Tableau
-                </p>
-                <p style="color: var(--text-secondary); line-height: 1.8;">
-                    <strong style="color: var(--primary-light);">Analytical Abilities:</strong> Data Cleaning, Exploratory Data Analysis (EDA), RFM Segmentation, Statistical Analysis, Dashboard Development
-                </p>
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-placeholder">
+                <h3>📄 Resume Coming Soon</h3>
+                <p>My detailed resume will be available here shortly.</p>
+                <a href="https://github.com/Niharricky" target="_blank" class="btn btn-primary">View GitHub Profile</a>
             </div>
         </div>
     </div>
@@ -888,7 +676,7 @@
                     <div class="contact-icon">📧</div>
                     <div class="contact-details">
                         <h3>Email</h3>
-                        <a href="/cdn-cgi/l/email-protection#ed8384858c9f9982829fddd5ad8a808c8481c38e8280"><span class="__cf_email__" data-cfemail="f49a9d9c9586809b9b86c4ccb49399959d98da979b99">[email&#160;protected]</span></a>
+                        <a href="mailto:nihartoor08@gmail.com">nihartoor08@gmail.com</a>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -899,17 +687,10 @@
                     </div>
                 </div>
                 <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <div class="contact-details">
-                        <h3>Phone</h3>
-                        <a href="tel:+919896712626">+91-9896712626</a>
-                    </div>
-                </div>
-                <div class="contact-item">
                     <div class="contact-icon">📍</div>
                     <div class="contact-details">
                         <h3>Location</h3>
-                        <a>Haryana, India</a>
+                        <a>India</a>
                     </div>
                 </div>
             </div>
@@ -917,10 +698,10 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Nihar Toor. All rights reserved.</p>
+        <p>&copy; 2025 Nihar Toor. All rights reserved.</p>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         function showPage(pageName) {
             // Hide all pages
             const pages = document.querySelectorAll('.page');
@@ -947,4 +728,15 @@
 
         // Close mobile menu when clicking outside
         document.addEventListener('click', function(event) {
-            cons
+            const nav = document.querySelector('nav');
+            const navLinks = document.getElementById('navLinks');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (!nav.contains(event.target) && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
